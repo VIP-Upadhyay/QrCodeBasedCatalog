@@ -13,4 +13,9 @@ public class FirstController {
         return "/abc.jsp";
     }
 
+    @GetMapping("/")
+    public String gotTAdmin(){
+        return "redirect:/admin";
+    }
+
 }

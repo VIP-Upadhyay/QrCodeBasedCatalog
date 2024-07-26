@@ -25,7 +25,7 @@ public class QRCodeService {
         int qrCodeSize = 300;
         int padding = 20;
         int textPadding = 10;
-        int maxWidth = 600; // Maximum width of the image
+        int maxWidth = 375; // Maximum width of the image
 
         Map<EncodeHintType, Object> hints = new HashMap<>();
         hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");

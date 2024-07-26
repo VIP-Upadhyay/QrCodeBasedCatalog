@@ -66,8 +66,8 @@ let currentPage = 0;
         }
 
         function shareOnWhatsApp(name) {
-            let qrCodeUrl = `${window.location.origin}/qrcode/${name}`;
-            let whatsappUrl = `https://wa.me/?text=${encodeURIComponent(qrCodeUrl)}`;
+            let productUrl = `${window.location.origin}/getProduct/${name}`;
+            let whatsappUrl = `https://wa.me/?text=${encodeURIComponent(productUrl)}`;
             window.open(whatsappUrl, '_blank');
         }
 

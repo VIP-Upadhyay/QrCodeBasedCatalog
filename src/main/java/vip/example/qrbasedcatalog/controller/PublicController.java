@@ -11,7 +11,6 @@ import vip.example.qrbasedcatalog.model.Website;
 import vip.example.qrbasedcatalog.service.ProductService;
 
 @Controller
-@RequestMapping("/public")
 public class PublicController {
 
     @Autowired
