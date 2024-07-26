@@ -39,7 +39,7 @@ public class QrCodeController {
         baseUrl += contextPath;
 
         System.out.println(baseUrl);
-        byte[] qrCodeImage = qrCodeService.generateQRCode(baseUrl+"/public/getProduct/"+name);
+        byte[] qrCodeImage = qrCodeService.generateQRCode(baseUrl+"/getProduct/"+name);
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.IMAGE_PNG);
         headers.setContentLength(qrCodeImage.length);
